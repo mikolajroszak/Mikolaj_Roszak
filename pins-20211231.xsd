@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:64c437b7-529f-475d-9434-ecc6e115f754,g:325a7758-f417-420c-87bf-a21b35c9b794-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:pins="http://www.pinterest.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.pinterest.com/20211231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2021" schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="pins-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="pins-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="pins-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="pins-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.pinterest.com/role/CoverPage">
+        <link:definition>0001001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.pinterest.com/role/AuditInformation">
+        <link:definition>0002002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.pinterest.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>1001003 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.pinterest.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>1002004 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.pinterest.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>1003005 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS" roleURI="http://www.pinterest.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS">
+        <link:definition>1004006 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFREDEEMABLECONVERTIBLEPREFERREDSTOCKANDSTOCKHOLDERSEQUITYDEFICIT" roleURI="http://www.pinterest.com/role/CONSOLIDATEDSTATEMENTSOFREDEEMABLECONVERTIBLEPREFERREDSTOCKANDSTOCKHOLDERSEQUITYDEFICIT">
+        <link:definition>1005007 - Statement - CONSOLIDATED STATEMENTS OF REDEEMABLE CONVERTIBLE PREFERRED STOCK AND STOCKHOLDERS' EQUITY (DEFICIT)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.pinterest.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>1006008 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWSParenthetical" roleURI="http://www.pinterest.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWSParenthetical">
+        <link:definition>1007009 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPolicies" roleURI="http://www.pinterest.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPolicies">
+        <link:definition>2101101 - Disclosure - Description of Business and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.pinterest.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>2202201 - Disclosure - Description of Business and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesTables" roleURI="http://www.pinterest.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesTables">
+        <link:definition>2303301 - Disclosure - Description of Business and Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.pinterest.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>2404401 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesEstimatedUsefulLivesofPropertyandEquipmentDetails" roleURI="http://www.pinterest.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesEstimatedUsefulLivesofPropertyandEquipmentDetails">
+        <link:definition>2405402 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Estimated Useful Lives of Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecurities" roleURI="http://www.pinterest.com/role/CashCashEquivalentsandMarketableSecurities">
+        <link:definition>2106102 - Disclosure - Cash, Cash Equivalents and Marketable Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesTables" roleURI="http://www.pinterest.com/role/CashCashEquivalentsandMarketableSecuritiesTables">
+        <link:definition>2307302 - Disclosure - Cash, Cash Equivalents and Marketable Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesCompositionofCashCashEquivalentsandMarketableSecuritiesDetails" roleURI="http://www.pinterest.com/role/CashCashEquivalentsandMarketableSecuritiesCompositionofCashCashEquivalentsandMarketableSecuritiesDetails">
+        <link:definition>2408403 - Disclosure - Cash, Cash Equivalents and Marketable Securities - Composition of Cash, Cash Equivalents and Marketable Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesCompositionofCashCashEquivalentsandMarketableSecuritiesDetails_1" roleURI="http://www.pinterest.com/role/CashCashEquivalentsandMarketableSecuritiesCompositionofCashCashEquivalentsandMarketableSecuritiesDetails_1">
+        <link:definition>2408403 - Disclosure - Cash, Cash Equivalents and Marketable Securities - Composition of Cash, Cash Equivalents and Marketable Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandMarketableSecuritiesFairValueofMarketableSecuritiesbyContractualMaturityDetails" roleURI="http://www.pinterest.com/role/CashCashEquivalentsandMarketableSecuritiesFairValueofMarketableSecuritiesbyContractualMaturityDetails">
+        <link:definition>2409404 - Disclosure - Cash, Cash Equivalents and Marketable Securities - Fair Value of Marketable Securities by Contractual Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstruments" roleURI="http://www.pinterest.com/role/FairValueofFinancialInstruments">
+        <link:definition>2110103 - Disclosure - Fair Value of Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsTables" roleURI="http://www.pinterest.com/role/FairValueofFinancialInstrumentsTables">
+        <link:definition>2311303 - Disclosure - Fair Value of Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsFairValuesofFinancialInstrumentsMeasuredonaRecurringBasisDetails" roleURI="http://www.pinterest.com/role/FairValueofFinancialInstrumentsFairValuesofFinancialInstrumentsMeasuredonaRecurringBasisDetails">
+        <link:definition>2412405 - Disclosure - Fair Value of Financial Instruments - Fair Values of Financial Instruments Measured on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBalanceSheetComponents" roleURI="http://www.pinterest.com/role/OtherBalanceSheetComponents">
+        <link:definition>2113104 - Disclosure - Other Balance Sheet Components</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBalanceSheetComponentsTables" roleURI="http://www.pinterest.com/role/OtherBalanceSheetComponentsTables">
+        <link:definition>2314304 - Disclosure - Other Balance Sheet Components (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBalanceSheetComponentsPropertyandEquipmentNetDetails" roleURI="http://www.pinterest.com/role/OtherBalanceSheetComponentsPropertyandEquipmentNetDetails">
+        <link:definition>2415406 - Disclosure - Other Balance Sheet Components - Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBalanceSheetComponentsNarrativeDetails" roleURI="http://www.pinterest.com/role/OtherBalanceSheetComponentsNarrativeDetails">
+        <link:definition>2416407 - Disclosure - Other Balance Sheet Components - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBalanceSheetComponentsAccruedExpensesandOtherCurrentLiabilitiesDetails" roleURI="http://www.pinterest.com/role/OtherBalanceSheetComponentsAccruedExpensesandOtherCurrentLiabilitiesDetails">
+        <link:definition>2417408 - Disclosure - Other Balance Sheet Components - Accrued Expenses and Other Current Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Acquisition" roleURI="http://www.pinterest.com/role/Acquisition">
+        <link:definition>2118105 - Disclosure - Acquisition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionDetails" roleURI="http://www.pinterest.com/role/AcquisitionDetails">
+        <link:definition>2419409 - Disclosure - Acquisition (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNet" roleURI="http://www.pinterest.com/role/GoodwillandIntangibleAssetsNet">
+        <link:definition>2120106 - Disclosure - Goodwill and Intangible Assets, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetTables" roleURI="http://www.pinterest.com/role/GoodwillandIntangibleAssetsNetTables">
+        <link:definition>2321305 - Disclosure - Goodwill and Intangible Assets, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetScheduleofGoodwillDetails" roleURI="http://www.pinterest.com/role/GoodwillandIntangibleAssetsNetScheduleofGoodwillDetails">
+        <link:definition>2422410 - Disclosure - Goodwill and Intangible Assets, Net - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetCompositionofIntangibleAssetsNetDetails" roleURI="http://www.pinterest.com/role/GoodwillandIntangibleAssetsNetCompositionofIntangibleAssetsNetDetails">
+        <link:definition>2423411 - Disclosure - Goodwill and Intangible Assets, Net - Composition of Intangible Assets, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetNarrativeDetails" roleURI="http://www.pinterest.com/role/GoodwillandIntangibleAssetsNetNarrativeDetails">
+        <link:definition>2424412 - Disclosure - Goodwill and Intangible Assets, Net - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetEstimatedFutureAmortizationExpenseDetails" roleURI="http://www.pinterest.com/role/GoodwillandIntangibleAssetsNetEstimatedFutureAmortizationExpenseDetails">
+        <link:definition>2425413 - Disclosure - Goodwill and Intangible Assets, Net - Estimated Future Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.pinterest.com/role/CommitmentsandContingencies">
+        <link:definition>2126107 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentandContingenciesTables" roleURI="http://www.pinterest.com/role/CommitmentandContingenciesTables">
+        <link:definition>2327306 - Disclosure - Commitment and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesNoncancelableContractualCommitmentsDetails" roleURI="http://www.pinterest.com/role/CommitmentsandContingenciesNoncancelableContractualCommitmentsDetails">
+        <link:definition>2428414 - Disclosure - Commitments and Contingencies - Non-cancelable Contractual Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesNoncancelableContractualCommitmentsDetails_1" roleURI="http://www.pinterest.com/role/CommitmentsandContingenciesNoncancelableContractualCommitmentsDetails_1">
+        <link:definition>2428414 - Disclosure - Commitments and Contingencies - Non-cancelable Contractual Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesNarrativeDetails" roleURI="http://www.pinterest.com/role/CommitmentsandContingenciesNarrativeDetails">
+        <link:definition>2429415 - Disclosure - Commitments and Contingencies - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.pinterest.com/role/Leases">
+        <link:definition>2130108 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.pinterest.com/role/LeasesTables">
+        <link:definition>2331307 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOperatingLeaseCostsDetails" roleURI="http://www.pinterest.com/role/LeasesOperatingLeaseCostsDetails">
+        <link:definition>2432416 - Disclosure - Leases - Operating Lease Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.pinterest.com/role/LeasesNarrativeDetails">
+        <link:definition>2433417 - Disclosure - Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturitiesofOperatingLeaseLiabilitiesDetails" roleURI="http://www.pinterest.com/role/LeasesMaturitiesofOperatingLeaseLiabilitiesDetails">
+        <link:definition>2434418 - Disclosure - Leases - Maturities of Operating Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturitiesofOperatingLeaseLiabilitiesDetails_1" roleURI="http://www.pinterest.com/role/LeasesMaturitiesofOperatingLeaseLiabilitiesDetails_1">
+        <link:definition>2434418 - Disclosure - Leases - Maturities of Operating Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensation" roleURI="http://www.pinterest.com/role/ShareBasedCompensation">
+        <link:definition>2135109 - Disclosure - Share-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationTables" roleURI="http://www.pinterest.com/role/ShareBasedCompensationTables">
+        <link:definition>2336308 - Disclosure - Share-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationNarrativeDetails" roleURI="http://www.pinterest.com/role/ShareBasedCompensationNarrativeDetails">
+        <link:definition>2437419 - Disclosure - Share-Based Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationStockOptionActivityDetails" roleURI="http://www.pinterest.com/role/ShareBasedCompensationStockOptionActivityDetails">
+        <link:definition>2438420 - Disclosure - Share-Based Compensation - Stock Option Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationRestrictedStockUnitandRestrictedStockAwardActivityDetails" roleURI="http://www.pinterest.com/role/ShareBasedCompensationRestrictedStockUnitandRestrictedStockAwardActivityDetails">
+        <link:definition>2439421 - Disclosure - Share-Based Compensation - Restricted Stock Unit and Restricted Stock Award Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationSharebasedCompensationExpenseDetails" roleURI="http://www.pinterest.com/role/ShareBasedCompensationSharebasedCompensationExpenseDetails">
+        <link:definition>2440422 - Disclosure - Share-Based Compensation - Share-based Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareAttributabletoCommonStockholders" roleURI="http://www.pinterest.com/role/NetIncomeLossPerShareAttributabletoCommonStockholders">
+        <link:definition>2141110 - Disclosure - Net Income (Loss) Per Share Attributable to Common Stockholders</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareAttributabletoCommonStockholdersTables" roleURI="http://www.pinterest.com/role/NetIncomeLossPerShareAttributabletoCommonStockholdersTables">
+        <link:definition>2342309 - Disclosure - Net Income (Loss) Per Share Attributable to Common Stockholders (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareCalculationofBasicandDilutedNetIncomeLossPerShareDetails" roleURI="http://www.pinterest.com/role/NetIncomeLossPerShareCalculationofBasicandDilutedNetIncomeLossPerShareDetails">
+        <link:definition>2443423 - Disclosure - Net Income (Loss) Per Share - Calculation of Basic and Diluted Net Income (Loss) Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareAttributabletoCommonStockholdersWeightedAverageAntiDilutiveSharesofCommonStockExcludedfromtheCalculationofDilutedNetLossPerShareDetails" roleURI="http://www.pinterest.com/role/NetIncomeLossPerShareAttributabletoCommonStockholdersWeightedAverageAntiDilutiveSharesofCommonStockExcludedfromtheCalculationofDilutedNetLossPerShareDetails">
+        <link:definition>2444424 - Disclosure - Net Income (Loss) Per Share Attributable to Common Stockholders - Weighted-Average Anti-Dilutive Shares of Common Stock Excluded from the Calculation of Diluted Net Loss Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.pinterest.com/role/IncomeTaxes">
+        <link:definition>2145111 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.pinterest.com/role/IncomeTaxesTables">
+        <link:definition>2346310 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesComponentsofLossBeforeProvisionforIncomeTaxesDetails" roleURI="http://www.pinterest.com/role/IncomeTaxesComponentsofLossBeforeProvisionforIncomeTaxesDetails">
+        <link:definition>2447425 - Disclosure - Income Taxes - Components of Loss Before Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesCompositionoftheProvisionforIncomeTaxesDetails" roleURI="http://www.pinterest.com/role/IncomeTaxesCompositionoftheProvisionforIncomeTaxesDetails">
+        <link:definition>2448426 - Disclosure - Income Taxes - Composition of the Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationoftheDifferenceBetweenIncomeTaxesComputedattheStatutoryFederalIncomeTaxRateandtheProvisionforIncomeTaxesDetails" roleURI="http://www.pinterest.com/role/IncomeTaxesReconciliationoftheDifferenceBetweenIncomeTaxesComputedattheStatutoryFederalIncomeTaxRateandtheProvisionforIncomeTaxesDetails">
+        <link:definition>2449427 - Disclosure - Income Taxes - Reconciliation of the Difference Between Income Taxes Computed at the Statutory Federal Income Tax Rate and the Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSignificantComponentsofDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.pinterest.com/role/IncomeTaxesSignificantComponentsofDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>2450428 - Disclosure - Income Taxes - Significant Components of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.pinterest.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>2451429 - Disclosure - Income Taxes - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesChangesinGrossUnrecognizedTaxBenefitsDetails" roleURI="http://www.pinterest.com/role/IncomeTaxesChangesinGrossUnrecognizedTaxBenefitsDetails">
+        <link:definition>2452430 - Disclosure - Income Taxes - Changes in Gross Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GeographicalInformation" roleURI="http://www.pinterest.com/role/GeographicalInformation">
+        <link:definition>2153112 - Disclosure - Geographical Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GeographicalInformationTables" roleURI="http://www.pinterest.com/role/GeographicalInformationTables">
+        <link:definition>2354311 - Disclosure - Geographical Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GeographicalInformationDetails" roleURI="http://www.pinterest.com/role/GeographicalInformationDetails">
+        <link:definition>2455431 - Disclosure - Geographical Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="pins_LesseeOperatingLeaseAndShortTermLeaseLiabilityPaymentsDueYearOne" abstract="false" name="LesseeOperatingLeaseAndShortTermLeaseLiabilityPaymentsDueYearOne" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_RedeemableConvertiblePreferredStockWarrantsMember" abstract="true" name="RedeemableConvertiblePreferredStockWarrantsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_StateTaxAuthoritiesExcludingCaliforniaMember" abstract="true" name="StateTaxAuthoritiesExcludingCaliforniaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_A2019OmnibusIncentivePlanMember" abstract="true" name="A2019OmnibusIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_StockIssuedDuringPeriodSharesRestrictedStockUnitsReleased" abstract="false" name="StockIssuedDuringPeriodSharesRestrictedStockUnitsReleased" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="pins_CashCashEquivalentsAndDebtSecuritiesAbstract" abstract="true" name="CashCashEquivalentsAndDebtSecuritiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="pins_IncreaseDecreaseInOperatingLeaseRightOfUseAssets" abstract="false" name="IncreaseDecreaseInOperatingLeaseRightOfUseAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_CommitmentsAndContingenciesLineItems" abstract="true" name="CommitmentsAndContingenciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="pins_TemporaryEquitySharesConversionOfConvertibleSecurities" abstract="false" name="TemporaryEquitySharesConversionOfConvertibleSecurities" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="pins_OtherForeignMember" abstract="true" name="OtherForeignMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_CashAndCashEquivalentsAmortizedCost" abstract="false" name="CashAndCashEquivalentsAmortizedCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_RestrictedStockUnitsRSUsAndRestrictedStockAwardsRSAsMember" abstract="true" name="RestrictedStockUnitsRSUsAndRestrictedStockAwardsRSAsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_TemporaryEquityValueConversionOfConvertibleSecurities" abstract="false" name="TemporaryEquityValueConversionOfConvertibleSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="pins_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="pins_EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsThatWouldImpactEffectiveTaxRateAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsThatWouldImpactEffectiveTaxRateAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_StockIssuedDuringPeriodValueRestrictedStockUnitsReleased" abstract="false" name="StockIssuedDuringPeriodValueRestrictedStockUnitsReleased" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_SummaryOfSignificantAccountingPoliciesLineItems" abstract="true" name="SummaryOfSignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="pins_LineOfCreditFacilityAccordionOptionIncreaseInMaximumBorrowingCapacityIfExercised" abstract="false" name="LineOfCreditFacilityAccordionOptionIncreaseInMaximumBorrowingCapacityIfExercised" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_ConcentrationOfRiskBusinessRiskPolicyPolicyTextBlock" abstract="false" name="ConcentrationOfRiskBusinessRiskPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="pins_BLBWLimitedMember" abstract="true" name="BLBWLimitedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_SummaryOfSignificantAccountingPoliciesTable" abstract="true" name="SummaryOfSignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="pins_CashCashEquivalentsAndDebtSecuritiesAvailableForSaleFairValue" abstract="false" name="CashCashEquivalentsAndDebtSecuritiesAvailableForSaleFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_CommitmentsAndContingenciesTable" abstract="true" name="CommitmentsAndContingenciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="pins_BusinessCombinationConsiderationTransferredIndemnificationHoldback" abstract="false" name="BusinessCombinationConsiderationTransferredIndemnificationHoldback" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="pins_CashCashEquivalentsAndFinancialInstrumentsLineItems" abstract="true" name="CashCashEquivalentsAndFinancialInstrumentsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="pins_DepreciablePropertyPlantAndEquipmentMember" abstract="true" name="DepreciablePropertyPlantAndEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_CashAndCashEquivalentsAccumulatedGrossUnrealizedGainBeforeTax" abstract="false" name="CashAndCashEquivalentsAccumulatedGrossUnrealizedGainBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_CoFounderAndChiefDesignAndCreativeOfficerMember" abstract="true" name="CoFounderAndChiefDesignAndCreativeOfficerMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_A2009StockPlanMember" abstract="true" name="A2009StockPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_InterestExpenseAndOtherNonoperatingExpenseIncomeNet" abstract="false" name="InterestExpenseAndOtherNonoperatingExpenseIncomeNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_MajorCustomerOneMember" abstract="true" name="MajorCustomerOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_ScheduleOfCashCashEquivalentsAndFinancialInstrumentsTable" abstract="true" name="ScheduleOfCashCashEquivalentsAndFinancialInstrumentsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="pins_ReallocationOfNetIncomeLossCommonStock" abstract="false" name="ReallocationOfNetIncomeLossCommonStock" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_CashAndCashEquivalentsAccumulatedGrossUnrealizedLossBeforeTax" abstract="false" name="CashAndCashEquivalentsAccumulatedGrossUnrealizedLossBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_OtherBalanceSheetComponentsAbstract" abstract="true" name="OtherBalanceSheetComponentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="pins_RestrictedCashAndCashEquivalentsFairValueDisclosure" abstract="false" name="RestrictedCashAndCashEquivalentsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_DeferredTaxAssetsLeaseObligations" abstract="false" name="DeferredTaxAssetsLeaseObligations" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_StockIssuedDuringPeriodSharesCharitableContributions" abstract="false" name="StockIssuedDuringPeriodSharesCharitableContributions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="pins_MunicipalSecuritiesMember" abstract="true" name="MunicipalSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="pins_LesseeOperatingLeaseAndShortTermLeaseLiabilityPaymentsDue" abstract="false" name="LesseeOperatingLeaseAndShortTermLeaseLiabilityPaymentsDue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_PrepaidExpensesAndOtherCurrentAssetsFairValueDisclosure" abstract="false" name="PrepaidExpensesAndOtherCurrentAssetsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_StockIssuedDuringPeriodValueCharitableContributions" abstract="false" name="StockIssuedDuringPeriodValueCharitableContributions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_LineOfCreditFacilityAccordionOptionIncreaseInMaximumBorrowingCapacityIfExercisedPercentageOfConsolidatedTotalAssets" abstract="false" name="LineOfCreditFacilityAccordionOptionIncreaseInMaximumBorrowingCapacityIfExercisedPercentageOfConsolidatedTotalAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="pins_CashCashEquivalentsAndDebtSecuritiesAvailableForSaleGrossUnrealizedLoss" abstract="false" name="CashCashEquivalentsAndDebtSecuritiesAvailableForSaleGrossUnrealizedLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_LesseeOperatingLeaseLeaseNotYetCommencedUndiscountedFuturePayments" abstract="false" name="LesseeOperatingLeaseLeaseNotYetCommencedUndiscountedFuturePayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_LongLivedAssetsIncludingGoodwillAndIntangibleAssetsPolicyTextBlock" abstract="false" name="LongLivedAssetsIncludingGoodwillAndIntangibleAssetsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="pins_CashCashEquivalentsAndDebtSecuritiesAvailableForSaleAmortizedCost" abstract="false" name="CashCashEquivalentsAndDebtSecuritiesAvailableForSaleAmortizedCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_AccruedHostingExpensesCurrent" abstract="false" name="AccruedHostingExpensesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_ReallocationOfNetIncomeLossConversionOfCommonStock" abstract="false" name="ReallocationOfNetIncomeLossConversionOfCommonStock" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_UnrecognizedTaxBenefitsThatWouldNotImpactEffectiveTaxRate" abstract="false" name="UnrecognizedTaxBenefitsThatWouldNotImpactEffectiveTaxRate" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_IncrementalCommonSharesAttributableToDilutiveEffectOfConversionOfCommonStock" abstract="false" name="IncrementalCommonSharesAttributableToDilutiveEffectOfConversionOfCommonStock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="pins_CommonStockAdditionalSharesReservedForFutureIssuancePercentageOfOutstandingShares" abstract="false" name="CommonStockAdditionalSharesReservedForFutureIssuancePercentageOfOutstandingShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="pins_DebtInstrumentCovenantRequiredMinimumLiquidityBalance" abstract="false" name="DebtInstrumentCovenantRequiredMinimumLiquidityBalance" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="pins_CashCashEquivalentsAndDebtSecuritiesAvailableForSaleGrossUnrealizedGain" abstract="false" name="CashCashEquivalentsAndDebtSecuritiesAvailableForSaleGrossUnrealizedGain" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>
