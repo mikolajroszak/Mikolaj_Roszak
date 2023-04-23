@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifrs-full="http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:BPBP="https://www.bnpparibas.pl/2022/" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:gen="http://xbrl.org/2008/generic" xmlns:lei="http://www.xbrl.org/taxonomy/int/lei/2018-11-01" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:esef_cor="http://www.esma.europa.eu/taxonomy/2021-03-24/esef_cor" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" elementFormDefault="unqualified" targetNamespace="https://www.bnpparibas.pl/2022/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance" />
+  <xsd:import schemaLocation="http://www.esma.europa.eu/taxonomy/2021-03-24/esef_cor.xsd" namespace="http://www.esma.europa.eu/taxonomy/2021-03-24/esef_cor" />
+  <xsd:import schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" namespace="http://www.xbrl.org/dtr/type/numeric" />
+  <xsd:import schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" namespace="http://www.xbrl.org/dtr/type/non-numeric" />
+  <xsd:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="BNPParibasBankPolska-2022-12-31_pre.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="BNPParibasBankPolska-2022-12-31_def.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="BNPParibasBankPolska-2022-12-31_cal.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="BNPParibasBankPolska-2022-12-31_lab-pl.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="BNPParibasBankPolska-2022-12-31_lab-en.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://www.esma.europa.eu/taxonomy/2021-03-24/esef_cor-gen-pl.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/LinkbaseRef" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://www.esma.europa.eu/taxonomy/2021-03-24/esef_cor-lab-pl.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" />
+      <link:roleType roleURI="https://www.bnpparibas.pl/role/SkonsolidowanyRachunekZyskowIStrat" id="SkonsolidowanyRachunekZyskowIStrat">
+        <link:definition>Skonsolidowany rachunek zysków i strat</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.bnpparibas.pl/role/SkonsolidowaneSprawozdanieZCakowitychDochodow" id="SkonsolidowaneSprawozdanieZCakowitychDochodow">
+        <link:definition>Skonsolidowane sprawozdanie z całkowitych dochodów</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.bnpparibas.pl/role/SkonsolidowaneSprawozdanieZSytuacjiFinansowej" id="SkonsolidowaneSprawozdanieZSytuacjiFinansowej">
+        <link:definition>Skonsolidowane sprawozdanie z sytuacji finansowej</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.bnpparibas.pl/role/SkonsolidowaneSprawozdanieZeZmianWKapitaleWasnym2022" id="SkonsolidowaneSprawozdanieZeZmianWKapitaleWasnym2022">
+        <link:definition>Skonsolidowane sprawozdanie ze zmian w kapitale własnym 2022</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.bnpparibas.pl/role/SkonsolidowaneSprawozdanieZeZmianWKapitaleWasnym2021" id="SkonsolidowaneSprawozdanieZeZmianWKapitaleWasnym2021">
+        <link:definition>Skonsolidowane sprawozdanie ze zmian w kapitale własnym 2021</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.bnpparibas.pl/role/SkonsolidowaneSprawozdanieZPrzepywowPienieznych" id="SkonsolidowaneSprawozdanieZPrzepywowPienieznych">
+        <link:definition>Skonsolidowane sprawozdanie z przepływów pieniężnych</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.bnpparibas.pl/role/Esef_role-000000_reported" id="Esef_role-000000_reported">
+        <link:definition>esef_role-000000_reported</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="https://www.bnpparibas.pl/role/Anchoring" id="Anchoring">
+        <link:definition>Anchoring</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="BPBP_IncomeOfASimilarNatureToInterestOnInstrumentsMeasuredAtFairValueThroughProfitOrLoss" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" name="IncomeOfASimilarNatureToInterestOnInstrumentsMeasuredAtFairValueThroughProfitOrLoss" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_OtherOperatingIncome" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" name="OtherOperatingIncome" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_OtherOperatingExpenses" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="OtherOperatingExpenses" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_TaxOnFinancialInstitutions" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="TaxOnFinancialInstitutions" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_ResultOnFairValueHedgeAccounting" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="ResultOnFairValueHedgeAccounting" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_ResultOnInvestmentActivities" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" name="ResultOnInvestmentActivities" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_DifferencesFromHedgeAccountingLiabilities" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="instant" name="DifferencesFromHedgeAccountingLiabilities" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_ChangeInAmountsDueFromBanks" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="ChangeInAmountsDueFromBanks" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_ChangeInLoansAndAdvancesToCustomersMeasuredAtAmortisedCost" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="ChangeInLoansAndAdvancesToCustomersMeasuredAtAmortisedCost" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_ChangeInLoansAndAdvancesToCustomersMeasuredAtFairValueThroughProfitOrLoss" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="ChangeInLoansAndAdvancesToCustomersMeasuredAtFairValueThroughProfitOrLoss" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_ChangeInOtherAssetsAndReceivablesDueToCurrentIncomeTax" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="ChangeInOtherAssetsAndReceivablesDueToCurrentIncomeTax" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_ChangeInOtherLiabilitiesAndProvisionsDueToDeferredTax" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="ChangeInOtherLiabilitiesAndProvisionsDueToDeferredTax" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_LeasingFeesForShortTermLeasesNotIncludedInTheValuationOfTheLiability" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" name="LeasingFeesForShortTermLeasesNotIncludedInTheValuationOfTheLiability" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_InflowOfCashFromFinancingActivities" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration" name="InflowOfCashFromFinancingActivities" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_OutflowOfCashFromFinancingActivities" type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration" name="OutflowOfCashFromFinancingActivities" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_AmountsDueFromBanks" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" name="AmountsDueFromBanks" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_LoansAndAdvancesToCustomersMeasuredAtAmortisedCost" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" name="LoansAndAdvancesToCustomersMeasuredAtAmortisedCost" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_LoansAndAdvancesToCustomersMeasuredAtFairValueThroughProfitOrLoss" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" name="LoansAndAdvancesToCustomersMeasuredAtFairValueThroughProfitOrLoss" substitutionGroup="xbrli:item" />
+  <xsd:element id="BPBP_SecuritiesMeasuredAtAmortisedCost" type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="instant" name="SecuritiesMeasuredAtAmortisedCost" substitutionGroup="xbrli:item" />
+</xsd:schema>
